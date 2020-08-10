@@ -56,26 +56,24 @@ public class HappyController {
     		image.setEffect(null);
     	}
     	
-    	informUserText.setText("Pick a date. Then click \"See Earth\"");
+    	String chosenDate = date.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    	informUserText.setText("Getting Earth image on " + chosenDate);
     	// System.out.println("My first Java Fx program!");
     	BlueMarble b = new BlueMarble();
-    	String chosenDate = date.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
     	//System.out.println(chosenDate);
     	//String currentDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
     	//System.out.println(currentDate);
     	//System.out.println(chosenDate.compareTo(currentDate) > 0);
     	
     	b.setDate(chosenDate);
-    	try {
-    		
-    		if (checkEnhanced.isSelected()) {
-    			b.setEnhanced(true);
-    		}
-    		else {
-    			b.setEnhanced(false);
-    		}
-
-    		InputStream im = b.getImage();
+		if (checkEnhanced.isSelected()) {
+			b.setEnhanced(true);
+		}
+		else {
+			b.setEnhanced(false);
+		}
+		try {
+       		InputStream im = b.getImage();
     		Image displayedImage = new Image(im);
     		
     		//ImageView displayedView = new ImageView(displayedImage);
@@ -87,13 +85,12 @@ public class HappyController {
     			makeBlackWhite.setSaturation(-1);
     			image.setEffect(makeBlackWhite);
     		}
+    		informUserText.setText("Earth image on " + chosenDate);
        	}
     	catch (Exception e) {
     		informUserText.setText("Please pick a valid date");
-    		image.setImage(new Image("Assingment_Snapshot.png"));
+    		image.setImage(new Image("Earth_image.jpg"));
     	}
-    	//System.out.println("Done!");
-    	
+    	//System.out.println("Done!");	
     }
-
 }

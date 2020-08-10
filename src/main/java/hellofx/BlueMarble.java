@@ -49,7 +49,7 @@ public class BlueMarble {
 		String metaQueryURL = "https://epic.gsfc.nasa.gov/api/" + quality + "/date/" + dateAsString;
 		InputStream metaInfoStream = new URL(metaQueryURL).openStream();
 		String metaInfoJSON = IOUtils.toString(metaInfoStream, "UTF-8").replace("[", "").replace("]", "");
-		System.out.println(metaInfoJSON);
+		// System.out.println(metaInfoJSON);
 		metaInfoStream.close();
 		JSONObject json = new JSONObject(metaInfoJSON);
 		this.nasaImageName = (String) json.get("image");

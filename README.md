@@ -2,11 +2,15 @@
 
 This repository contains codes to complete the following exercise based on the original code from https://github.com/joonspoon/javafx-base
 
-User will selete a date and an Earth image will be displayed. All requirements of this exercise have been completed.
+User selects a date and an Earth image will be displayed.
+
+To launch this app, run Launcher.jave as a Java application.
+
+Earth image displayed at the start of the program is from: https://www.pexels.com/photo/planet-earth-close-up-photo-45208
 
 The following is the original description of this exercise.
 
-To launch this app, run Launcher.jave as a Java application.
+All requirements of this exercise have been completed.
 
 # To run within Eclipse:
 1. Fork, then clone this repository.

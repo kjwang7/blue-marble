@@ -57,7 +57,7 @@ public class HappyController {
     	}
     	
     	informUserText.setText("Pick a date. Then click \"See Earth\"");
-    	System.out.println("My first Java Fx program!");
+    	// System.out.println("My first Java Fx program!");
     	BlueMarble b = new BlueMarble();
     	String chosenDate = date.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
     	//System.out.println(chosenDate);

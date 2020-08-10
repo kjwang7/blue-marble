@@ -33,8 +33,8 @@ public class BlueMarble {
 			getMetaData();
 
 			// Debug
-			System.out.println("https://api.nasa.gov/EPIC/archive/" + quality + "/" + dateAsString.replace('-', '/')
-					+ "/png/" + this.nasaImageName + ".png?api_key=" + API_KEY);
+			//System.out.println("https://api.nasa.gov/EPIC/archive/" + quality + "/" + dateAsString.replace('-', '/')
+			//		+ "/png/" + this.nasaImageName + ".png?api_key=" + API_KEY);
 			
 			URL url = new URL("https://api.nasa.gov/EPIC/archive/" + quality + "/" + dateAsString.replace('-', '/')
 					+ "/png/" + this.nasaImageName + ".png?api_key=" + API_KEY);

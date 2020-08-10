@@ -1,3 +1,13 @@
+# Blue Marble (extra credit)
+
+This repository contains codes to complete the following exercise based on the original code from https://github.com/joonspoon/javafx-base
+
+User will selete a date and an Earth image will be displayed. All requirements of this exercise have been completed.
+
+The following is the original description of this exercise.
+
+To launch this app, run Launcher.jave as a Java application.
+
 # To run within Eclipse:
 1. Fork, then clone this repository.
 2. From Eclipse, File > Import > Existing Maven Projects.

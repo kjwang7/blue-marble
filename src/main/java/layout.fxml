@@ -9,18 +9,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.HappyController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.HappyController">
    <children>
-      <Button fx:id="button" layoutX="314.0" layoutY="422.0" mnemonicParsing="false" onAction="#buttonPressed" text="See Earth" />
-      <ImageView fx:id="image" fitHeight="206.0" fitWidth="362.0" layoutX="42.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="button" layoutX="300.0" layoutY="393.0" mnemonicParsing="false" onAction="#buttonPressed" text="See Earth" />
+      <ImageView fx:id="image" fitHeight="178.0" fitWidth="373.0" layoutX="80.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Assingment_Snapshot.png" />
+            <Image url="@Assignment_Snapshot.png" />
          </image>
       </ImageView>
-      <DatePicker fx:id="date" layoutX="457.0" layoutY="71.0" onAction="#datePicked" prefHeight="27.0" prefWidth="168.0" />
+      <DatePicker fx:id="date" layoutX="457.0" layoutY="126.0" onAction="#datePicked" prefHeight="27.0" prefWidth="168.0" />
       <Label layoutX="266.0" layoutY="22.0" text="Earth Viewer" />
       <Text fx:id="informUserText" layoutX="255.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a date. Then Click &quot;See Earth&quot;" />
-      <CheckBox fx:id="checkEnhanced" disable="true" layoutX="484.0" layoutY="122.0" mnemonicParsing="false" text="Enhanced Image" />
-      <CheckBox fx:id="blackWhite" layoutX="484.0" layoutY="165.0" mnemonicParsing="false" text="Black and White only" />
+      <CheckBox fx:id="checkEnhanced" disable="true" layoutX="484.0" layoutY="177.0" mnemonicParsing="false" text="Enhanced Image" />
+      <CheckBox fx:id="blackWhite" layoutX="484.0" layoutY="220.0" mnemonicParsing="false" text="Black and White only" />
    </children>
 </AnchorPane>
